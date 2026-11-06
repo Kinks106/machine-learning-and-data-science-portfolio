@@ -72,8 +72,8 @@ Exact dependencies vary per project — use each folder's own `requirements.txt`
 Clone the repository:
 
 ```bash
-git clone https://github.com/Kinks106/machine-learning-and-data-science-portfolio.git
-cd machine-learning-and-data-science-portfolio
+git clone https://github.com/Kinks106/ML-Portfolio.git
+cd ML-Portfolio
 ```
 
 Each project is self-contained. Create a fresh virtual environment per project you want to run:
