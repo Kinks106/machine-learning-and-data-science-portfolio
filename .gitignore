@@ -1,11 +1,37 @@
-# Data files
-EDA Proj 1/archive.zip
-EDA Proj 1/TWO_CENTURIES_OF_UM_RACES
-EDA Proj 1/TWO_CENTURIES_OF_UM_RACES.csv
-'Movie Recommendation System Proj 12.1/similarity.pkl'
-# Common data/zip files
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model artifacts (keep only intentionally versioned models)
+*.h5
+*.keras
+*.pkl
+*.sav
+*.pth
+*.pt
+
+# Datasets and archives
 *.csv
 *.zip
 *.jpg
-*.pth
-*.pkl
+*.jpeg
+*.png
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Project-specific large dataset
+Dog Vs Cats Classifire Proj 6/PetImages/
