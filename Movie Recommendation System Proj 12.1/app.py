@@ -7,7 +7,15 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-TMDB_API_KEY = os.environ.get("TMDB_API_KEY", "f73fb13ec097ce6fd0fc412cbd21b201")
+TMDB_API_KEY = os.environ.get("TMDB_API_KEY")
+if not TMDB_API_KEY:
+    st.error(
+        "TMDB_API_KEY environment variable is not set. "
+        "Create a free key at https://www.themoviedb.org/settings/api, then set it before running:\n"
+        "  Windows PowerShell:  $env:TMDB_API_KEY = 'your_key'\n"
+        "  macOS / Linux:       export TMDB_API_KEY='your_key'"
+    )
+    st.stop()
 
 
 def requests_session_with_retries(total_retries=3, backoff_factor=0.5, status_forcelist=(429, 500, 502, 503, 504)):

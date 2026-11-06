@@ -1,11 +1,53 @@
-# Data files
+# ---- Project-specific data (kept from before) ----
 EDA Proj 1/archive.zip
 EDA Proj 1/TWO_CENTURIES_OF_UM_RACES
 EDA Proj 1/TWO_CENTURIES_OF_UM_RACES.csv
-'Movie Recommendation System Proj 12.1/similarity.pkl'
-# Common data/zip files
+Movie Recommendation System Proj 12.1/similarity.pkl
+
+# ---- Datasets / large data files ----
 *.csv
+*.tsv
 *.zip
+*.parquet
+*.xlsx
+
+# ---- Images (datasets) ----
 *.jpg
+*.jpeg
+
+# ---- Model / artifact files ----
 *.pth
+*.pt
 *.pkl
+*.sav
+*.joblib
+*.h5
+*.keras
+*.ckpt
+*.onnx
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Secrets / local config ----
+.env
+.env.*
+*.local
+
+# ---- OS / editor junk ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
